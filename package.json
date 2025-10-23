@@ -1,6 +1,6 @@
 {
   "name": "json-db-serve",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "type": "module",
   "description": "Simple JSON database mock REST API server (Express, JS)",
   "main": "./src/cli.js",
