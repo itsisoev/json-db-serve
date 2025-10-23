@@ -1,20 +1,45 @@
 {
   "name": "json-db-serve",
-  "version": "0.1.0",
-  "main": "index.js",
-  "bin": { "json-db-serve": "./src/cli.js" },
+  "version": "0.1.1",
+  "type": "module",
+  "description": "Simple JSON database mock REST API server (Express, JS)",
+  "main": "./src/cli.js",
+  "bin": {
+    "json-db-serve": "./src/cli.js"
+  },
   "scripts": {
     "dev": "node ./src/cli.js --db ./db.example.json --port 3000"
   },
-  "keywords": [],
+  "keywords": [
+    "json",
+    "rest",
+    "mock",
+    "server",
+    "api",
+    "express",
+    "lowdb"
+  ],
   "author": "itsisoev",
-  "license": "ISC",
-  "description": "Simple JSON database mock REST API server (Express, JS)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itsisoev/json-db-serve.git"
+  },
+  "bugs": {
+    "url": "https://github.com/itsisoev/json-db-serve/issues"
+  },
+  "homepage": "https://github.com/itsisoev/json-db-serve#readme",
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^5.1.0",
     "lowdb": "^7.0.1",
     "minimist": "^1.2.8",
     "morgan": "^1.10.1"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }
