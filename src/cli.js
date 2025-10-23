@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import minimist from 'minimist';
 import {createApp} from './server.js';
 import {resolve} from 'node:path';
